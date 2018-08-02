@@ -5,11 +5,11 @@ pipeline {
             steps{
                 sh '''
                 cd ..
-                mkdir git
+                
                 cd git
                 pwd
                 ls
-                touch ${STAGE_NAME}.new
+                touch ${STAGE_NAME}.aaaa
                 ls
                 '''
             }
