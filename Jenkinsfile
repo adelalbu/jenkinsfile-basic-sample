@@ -4,6 +4,9 @@ pipeline {
         stage('Create'){
             steps{
                 sh '''
+                cd ..
+                mkdir git
+                cd git
                 pwd
                 ls
                 touch ${STAGE_NAME}.new
